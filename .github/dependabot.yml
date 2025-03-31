@@ -5,7 +5,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "gomod" # See documentation for possible values
-    directory: "go/*" # Location of package manifests
+  - package-ecosystem: "gomod"
+    directory: "/go/src"  # Single directory (if only one path)
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "gomod"
+    directory: "/go/test"  # Separate entry for another directory
     schedule:
       interval: "weekly"

@@ -8,7 +8,7 @@ updates:
   - package-ecosystem: "gomod"
     # Update manifest files stored in these directories weekly
     directories:
-      - "/src"
-      - "/test"
+      - "/src/*"
+      - "/test/*"
     schedule:
       interval: "weekly"
